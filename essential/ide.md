@@ -29,19 +29,23 @@ $ vim jupyter_notebook_config.py
 ```
 
 #### &#x0275; test config in the cell 
-```
-1) width 
---------   
+`For other people to see your configuration, add the code on the top cell`
+##### &#x2192; width 
+```python
 from IPython.core.display import display, HTML                         
 display(HTML("<style>.container { width:85% !important; }</style>"))
+```
 
-2) font
--------
+##### &#x2192; font
+```python
 %%html                      
-<style type='text/css'>     
-.CodeMirror{                
-font-size: 14px;           
-</style>                    
+<style type='text/css'>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat+Alternates&family=Poiret+One&family=Ubuntu&display=swap');
+.CodeMirror{
+    font-size: 101%;
+    line-height: 2rem;
+    font-size: 'Ubuntu';
+</style>
 ```
 
 #### &#x0275; Jupyter Notebook Layout 
@@ -57,6 +61,7 @@ $ vim custom.css
 /* default cell width */
 /* adding the !important constraint, you won't be able to change config inside cell */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat+Alternates&family=Poiret+One&family=Ubuntu&display=swap');
+
 
 .container {
     width: 85% !important;
