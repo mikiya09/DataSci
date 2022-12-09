@@ -7,6 +7,7 @@
 ```
 >> vim ~/.latexmkrc 
 
+
 ------------------------------------------------
 // copy the following lines into .latexmkrc file 
 
