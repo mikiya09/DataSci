@@ -5,8 +5,8 @@ do data science work here
 ```
 
 #### &#x237e; Python Basic
-##### &#x23f5; [packages](./essential/python_package.md)
-##### &#x23f5; [IDE](./essential/ide.md)
+##### &#x23f5; [packages](./basic/python_package.md)
+##### &#x23f5; [IDE](./basic/ide.md)
 ```
 ```
 
@@ -31,7 +31,7 @@ math is important almost for everything
 ```
 
 ### &#x237e; Algebra
-##### &#x23f5; [Linear Algebra](./math/Linear_Algebra/)
+##### &#x23f5; [Linear Algebra](./math/Linear_Algebra)
 ```
 ```
 
