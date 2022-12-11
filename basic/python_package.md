@@ -5,5 +5,8 @@
 ```python 
 # for apple silicon to work with HMM
 pip install pyhhmm 
+
+# import 
+from pyhhmm.gaussian import GaussianHMM
 ```
 
