@@ -10,3 +10,8 @@ pip install pyhhmm
 from pyhhmm.gaussian import GaussianHMM
 ```
 
+#### &#x03e8; Mongo DB 
+```
+conda install -c anaconda pymongo
+```
+
