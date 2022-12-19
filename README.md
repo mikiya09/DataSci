@@ -10,7 +10,7 @@ do data science work here
 <br />
 
 ## &#x237e; SQL 
-##### &#x23f5; [command](./sql)
+##### &#x23f5; [command](./SQL/)
 <br />
 
 ## &#x237e; Machine Learning

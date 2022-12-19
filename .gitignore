@@ -37,7 +37,8 @@ Temporary Items
 # latex file ignore
 *.pdf
 
-
+# dataset for ds
+dataset
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks

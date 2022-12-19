@@ -1,8 +1,8 @@
 
 
-### Configuration
+## &#x03e8; Usage
 
-#### &#x0275; Run Shell Command in Jupyter
+#### &#x21f0; Run Shell Command in Jupyter
 ```
 # add exclamation mark before the command
 !pwd
@@ -18,7 +18,7 @@
 !jt -r
 ```
 
-#### &#x0275; Jupyter notebook default browser 
+#### &#x21f0; Jupyter notebook default browser 
 ```
 $ cd ~/.jupyter
 $ jupyter notebook --generate-config 
@@ -27,36 +27,32 @@ $ vim jupyter_notebook_config.py
 # seach for /browser keyword 
 # modify this line: c.NotebookApp.browser = 'open -a /Applications/Google\ Chrome.app %s'
 ```
+#### &#x21f0; Collapse/Folding
+[`reference`](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
+```
+$ conda activate env
+$ conda install -c conda-forge jupyter_contrib_nbextensions
+$ jupyter contrib nbextension install --user
 
-#### &#x0275; test config in the cell 
-`For other people to see your configuration, add the code on the top cell`
-##### &#x2192; width 
-```python
-from IPython.core.display import display, HTML                         
-display(HTML("<style>.container { width:85% !important; }</style>"))
+# 1) re-open jupyter notebook 
+# 2) toolbar
+# 3) Nbextension 
+# 4) uncheck disable configuration for nbextension 
+# 5) check Collapsible headings 
+# 6) over
+# 7) other option: Code Folding, Code Folding in Editor => click on them you will see how it works
 ```
 
-##### &#x2192; font
-```python
-%%html                      
-<style type='text/css'>
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat+Alternates&family=Poiret+One&family=Ubuntu&display=swap');
-.CodeMirror{
-    font-size: 101%;
-    line-height: 2rem;
-    font-size: 'Ubuntu';
-</style>
-```
+## &#x03e8; Configuration
 
-#### &#x0275; Jupyter Notebook Layout 
+#### &#x21f0; Notebook Layout
 ```
 $ cd ~/.jupyter 
 $ mkdir custom 
 $ cd custom 
 $ vim custom.css
 ```
-
-##### &#x2192; add the .css file
+##### &#x2570; add .css file
 ```css 
 /* default cell width */
 /* adding the !important constraint, you won't be able to change config inside cell */
@@ -75,5 +71,30 @@ $ vim custom.css
     font-family: 'Ubuntu', 'Fira Code', 'Monaco', 'Poiret One';
 }
 ```
+
+
+#### &#x21f0; Test Config
+`: For other people to see your configuration, add the code on the top cell`
+##### &#x2570; width 
+```python
+from IPython.core.display import display, HTML                         
+display(HTML("<style>.container { width:85% !important; }</style>"))
+```
+
+##### &#x2570; Font
+```python
+%%html                      
+<style type='text/css'>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat+Alternates&family=Poiret+One&family=Ubuntu&display=swap');
+.CodeMirror{
+    font-size: 101%;
+    line-height: 2rem;
+    font-size: 'Ubuntu';
+</style>
+```
+
+
+
+
 
 
