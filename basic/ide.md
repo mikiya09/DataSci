@@ -43,6 +43,9 @@ $ jupyter contrib nbextension install --user
 # 5) check Collapsible headings 
 # 6) over
 # 7) other option: Code Folding, Code Folding in Editor => click on them you will see how it works
+
+# if lots of yellow error occurs during execution of jupyter notebook: 
+#   -> check if duplicate Jupyter directory exist inside ~/Library/
 ```
 
 ## &#x03e8; UI Configuration
