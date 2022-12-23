@@ -27,11 +27,13 @@ $ vim jupyter_notebook_config.py
 # seach for /browser keyword 
 # modify this line: c.NotebookApp.browser = 'open -a /Applications/Google\ Chrome.app %s'
 ```
-#### &#x21f0; Collapse/Folding
-[`reference`](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
+#### &#x21f0; NBextension
+
+##### &#x2570; collapse/folding
 ```
-$ conda activate env
+$ conda activate base
 $ conda install -c conda-forge jupyter_contrib_nbextensions
+$ pip install jupyter-contrib-nbextensions
 $ jupyter contrib nbextension install --user
 
 # 1) re-open jupyter notebook 
@@ -43,7 +45,7 @@ $ jupyter contrib nbextension install --user
 # 7) other option: Code Folding, Code Folding in Editor => click on them you will see how it works
 ```
 
-## &#x03e8; Configuration
+## &#x03e8; UI Configuration
 
 #### &#x21f0; Notebook Layout
 ```
