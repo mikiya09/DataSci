@@ -9,10 +9,6 @@ do data science work here
 ##### &#x23f5; [IDE](./basic/ide.md)
 <br />
 
-## &#x237e; SQL 
-##### &#x23f5; [command](./SQL/)
-<br />
-
 ## &#x237e; Machine Learning
 ##### &#x23f5; [markov chain](./ML/markov_chain)
 <br />
