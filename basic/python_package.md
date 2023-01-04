@@ -12,6 +12,7 @@ from pyhhmm.gaussian import GaussianHMM
 
 #### &#x03e8; Mongo DB 
 ```
-conda install -c anaconda pymongo
+# pip install
+pip install pymongo
 ```
 
