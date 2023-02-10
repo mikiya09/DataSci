@@ -105,7 +105,6 @@ def ucs(graph, start, end):
             queue.append(holder)
             print(f"{vertex} -> {holder}: {result}")
             total += result
-    return 
 
 print(f"shortest distance based on Uniform Cost Search: {ucs(g, 'Arad', 'Bucharest')}")
 
