@@ -1,32 +1,23 @@
 
-# Uninformed Search 
-# ------------------
-# uniform cost search class 
-# can't find the exact path, only found the total cost of the shortest path
+# informed search 
 
-# Uniform Cost Search: (according to priority queue)
-# 1) a type of greedy algorithm
-# 2) make locally optimal choice at each expand (based on those node added to the priority queue)
-# 3) meaning: choose the next node who has the lowest cost in the queue to expand
-# 4) the node to expand each time is not necessarily in the straight order
-# 5) guarantee to find the globally optimal path
-# =============================== class ======================================
+# best-first search: find the globally optimal path 
+# g(n): the cost to each the node 
+# h(n): the cost to get from the node to the goal 
+# f(n) = g(n) + h(n) ==> simply addition 
+
+
 class Graph:
     def __init__(self):
-        self.graph = {}         # create dictionary for storing vertexes and weight
-        self.weights = {}
+        self.graph = {} 
+        self.weights = {} 
+        self.heuristic = {}
 
         self.path = []
         self.pq = {}            # priority queue in the uniform cost search
         self.visited = []
         self.optimal_cost = 0
-        
 
-    # return weight value with key-mapping in weights dictionary 
-    def get_cost(self, from_node, to_node):
-        return self.weights[(from_node + to_node)]
-
-    # auto build a map and weight dictionary based on Romania map
     # this is an undirected graph, so it can go back(revisited the passed vertex)
     def auto_path(self):
         # didn't include cities after Bucharest right now
@@ -46,6 +37,7 @@ class Graph:
             'Mehadia': ['Lugoj', 'Drobeta'],
             'Drobeta': ['Mehadia', 'Craiova']
         }
+
         # distance use int value: find a better way please, this is too exhausting
         self.weights = {
             'AradZerind': 75, 'ZerindArad': 75,
@@ -80,15 +72,36 @@ class Graph:
             'FagarasFagaras': 0
         }
 
-    # clean up edges and weights 
-    def empty(self):
-        self.graph = {} 
-        self.weights = {}
-        self.pq = {}
+        self.heuristic = {
+            'Arad': 366,
+            'Bucharest': 0,
+            'Craiova': 160,
+            'Drobeta': 242,
+            'Eforie': 161,
+            'Fagaras': 176,
+            'Giurgiu': 77,
+            'Hirsova': 151,
+            'Iasi': 226,
+            'Lugoj': 244,
+            'Mehadia': 241,
+            'Meamt': 234,
+            'Oradea': 380,
+            'Pitesti': 100,
+            'Rimnicu Vilcea': 193,
+            'Sibiu': 253,
+            'Timisoara': 329,
+            'Urziceni': 80,
+            'Vaslui': 199,
+            'Zerind': 374
+        }
 
-    # display prior queue 
-    def display_pq(self):
-        print(self.pq)
+    # cost function 
+    def get_a_star_cost(self, from_node, to_node):
+        return self.weights[(from_node + to_node)] + self.heuristic[to_node]
+
+    # return weight value with key-mapping in weights dictionary 
+    def get_path_cost(self, from_node, to_node):
+        return self.weights[(from_node + to_node)]
 
     # update priority queue based on the new vertex and cost given
     def update_pq(self, vertex, cost):
@@ -126,7 +139,17 @@ class Graph:
             if i+1 == len(path):
                 return total_cost
             else:
-                total_cost += self.get_cost(path[i], path[i+1])
+                total_cost += self.get_path_cost(path[i], path[i+1])
+
+    # calc for A* search
+    def calc_a_star_path(self, path):
+        total_cost = 0
+        for i in range(len(path)):
+            if i+1 == len(path):
+                return total_cost
+            else:
+                total_cost += self.get_a_star_cost(path[i], path[i+1])
+
 
     # get all paths, given the following
     # 1) graph 
@@ -152,7 +175,7 @@ class Graph:
         # collect all the paths based on the given start and end 
         self.get_all_paths(graph, start, end)
         for i in self.path:
-            if self.calc_path(i) == cost:
+            if self.calc_a_star_path(i) == cost:
                 print(f"Path: {i}, Cost: {self.calc_path(i)}")
 
 
@@ -169,7 +192,7 @@ end = 'Bucharest'
 
 
 # uniform cost search
-def ucs(graph, start, end):
+def aStar(graph, start, end):
     
     # adding the start node to the PQueue
     if start not in graph.pq: 
@@ -191,7 +214,7 @@ def ucs(graph, start, end):
             pass
         else:
             # update weight from start to children nodes, and remember to add the weight of start node as well
-            weight = graph.get_cost(start, v) + graph.pq[start]
+            weight = graph.get_a_star_cost(start, v) + graph.pq[start]
             graph.update_pq(v, weight)
 
     # adding the visited node to the path
@@ -199,12 +222,11 @@ def ucs(graph, start, end):
     # remove the node that had been expanded
     graph.remove(start)
     # set the newly smallest node as the start node and start another function call
-    ucs(graph, graph.pop(), end)
+    aStar(graph, graph.pop(), end)
 
 
 
 # run uniform cost search, find the optimal cost
-ucs(g, start, end)
+aStar(g, start, end)
 # match the path with optimal cost
 g.match_path(g, start, end, g.optimal_cost)
-
