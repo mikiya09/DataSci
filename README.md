@@ -6,6 +6,7 @@ do data science work here
 
 ## &#x237e; Python
 ##### &#x23f5; Necessity: [IDE](./basic/ide.md) | [Packages](./basic/python_package.md)
+##### &#x23f5; Torch
 <br />
 
 ## &#x237e; Machine Learning
