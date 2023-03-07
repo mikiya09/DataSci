@@ -5,14 +5,14 @@ do data science work here
 ```
 
 ## &#x237e; Python
-##### &#x23f5; Necessity: [IDE](./basic/ide.md) | [Packages](./basic/python_package.md)
-##### &#x23f5; Torch
+##### &#x23f5; Necessity: [IDE](./Basic/ide.md) | [Packages](./Basic/python_package.md)
+##### &#x23f5; [Torch](./Basic/torch/README.md) 
 <br />
 
 ## &#x237e; Machine Learning
 ##### &#x23f5; Example: [parts](./ML/ml-example/)
 ##### &#x23f5; Model: [markov chain](./ML/Model/markov_chain/)
-##### &#x23f5; DL: [neural network](./DL/neural_network)
+##### &#x23f5; DL: [neural network](./AI/Model/neural_network/)
 <br />
 
 ## &#x237e; AI
@@ -25,15 +25,15 @@ math is important almost for everything
 ```
 
 ## &#x237e; Algebra
-##### &#x23f5; [Linear Algebra](./math/Linear_Algebra)
+##### &#x23f5; [Linear Algebra](./Math/Linear_Algebra/)
 <br />
 
 ## &#x237e; Statistics
-##### &#x23f5; [Probability](./math/Statistics/probability.md)
+##### &#x23f5; [Probability](./Math/Statistics/probability.md)
 <br />
 
 ## &#x237e; Latex
-##### &#x23f5; [guide](./math/LaTex/LatexGuide.md) | [templates](./math/LaTex/templates/)
+##### &#x23f5; [guide](./Math/LaTex/LatexGuide.md) | [templates](./Math/LaTex/templates/)
 <br />
 
 
