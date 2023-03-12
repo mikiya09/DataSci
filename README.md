@@ -11,8 +11,8 @@ do data science work here
 
 ## &#x237e; AI
 ##### &#x23f5; Instance: [parts](./AI/ai-example/)
-##### &#x23f5; Machine Learning: [example](./ML/ml-example/) | [model](./ML/Model/)
-##### &#x23f5; Deep Learning: [NN](./AI/Model/neural_network/)
+##### &#x23f5; Theory: [example](./AI/ml/ml-example/)
+##### &#x23f5; ML/DL: [Models](./models/)
 <br />
 
 # &#x232d; Mathematics
