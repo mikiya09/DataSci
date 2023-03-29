@@ -10,8 +10,6 @@ nArray = np.array(
           [1, 2, 1, 3, 5, 7, 1],
           [1, 5, 1, 7, 1, 9, 0]])
 
-
-
 def meanFeature(data, classVal):
     outMeans = np.zeros(data.shape[1])
 

@@ -11,6 +11,11 @@ import simpleaudio as sa
 wave_obj = sa.WaveObject.from_wave_file("path/to/your/wav/file.wav")
 play_obj = wave_obj.play()
 play_obj.wait_done()
+```
+
+#### &#x03e8; Separate Melody and Accompaniment 
+*[demucs](./song-separator)*
+```python 
 
 ```
 

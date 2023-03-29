@@ -17,16 +17,11 @@ do data science work here
 
 # &#x232d; Mathematics
 ```
-math is important almost for everything
+mathematics is important almost for everything
 ```
 
-## &#x237e; Algebra
-##### &#x23f5; [Linear Algebra](./Math/Linear_Algebra/)
-<br />
-
-## &#x237e; Statistics
-##### &#x23f5; [Probability](./Math/Statistics/probability.md)
-<br />
+## &#x237e; Math for ML
+##### &#x23f5; [notes](./Math/ML_Math/)
 
 ## &#x237e; Latex
 ##### &#x23f5; [guide](./Math/LaTex/LatexGuide.md) | [templates](./Math/LaTex/templates/)
