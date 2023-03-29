@@ -34,11 +34,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# latex file ignore
-*.pdf
+# latex pdf 
+# originally want ignore latex generated file, but I have to keep pdf note from notability
 
 # dataset for ds
 dataset
+
+# directories 
+package 
+soundFonts
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
