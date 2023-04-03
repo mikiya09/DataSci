@@ -3,13 +3,13 @@
 ### Basic 
 
 #### &#x03e8; install from source 
-```
+```bash
 # if some package cannot be installed because any reason 
 # 1) install from source using 
 # 2) use crepe as an example 
 # 3) also work for dependencies, hmmlearn is the dependency for crepe 
 # 4) first install dependencies from source, then target package 
->> git clone https://github.com/hmmlearn/hmmlearn.git
+>> git clone 'https://github.com/hmmlearn/hmmlearn.git'
 >> cd hmmlearn 
 >> pip install . 
 # do the same for crepe
