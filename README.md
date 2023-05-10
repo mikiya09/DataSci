@@ -20,8 +20,8 @@ do data science work here
 <br />
 
 ## &#x237e; Math
-##### &#x23f5; Basic: [Linear_Algebra](./math/Linear_Algebra/)
-##### &#x23f5; Latex: [guide](./Math/LaTex/LatexGuide.md) | [templates](./Math/LaTex/templates/)
+##### &#x23f5; Basic: [linear_algebra](./math/Linear_Algebra/)
+##### &#x23f5; Latex: [guide](./math/LaTex/LatexGuide.md) | [templates](./math/LaTex/templates/)
 <br />
 
 
