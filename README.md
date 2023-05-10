@@ -7,7 +7,7 @@ do data science work here
 ## &#x237e; ML 
 ##### &#x23f5; traditional: [algorithms](./ml/algorithms/)
 ##### &#x23f5; advanced: [models](./ml/models/)
-##### &#x23f5; math: [stats](./ml/stats/)
+##### &#x23f5; basic: [stats](./ml/stats/) | [math](./ml/math/)
 <br />
 
 ## &#x237e; AI
@@ -19,9 +19,8 @@ do data science work here
 ##### &#x23f5; ....
 <br />
 
-## &#x237e; Math
-##### &#x23f5; Basic: [linear_algebra](./math/Linear_Algebra/)
-##### &#x23f5; Latex: [guide](./math/LaTex/LatexGuide.md) | [templates](./math/LaTex/templates/)
+## &#x237e; Latex
+##### &#x23f5; Latex: [guide](./latex/LatexGuide.md) | [templates](./latex/templates/)
 <br />
 
 
