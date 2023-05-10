@@ -11,7 +11,7 @@ do data science work here
 <br />
 
 ## &#x237e; AI
-##### &#x23f5; basic: [algorithm](./ai/basic_algorithm/)
+##### &#x23f5; basic: [algorithm](./AI/basic_algorithm/)
 <br />
 
 ## &#x237e; Projects
