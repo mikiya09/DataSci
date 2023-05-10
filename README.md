@@ -4,27 +4,24 @@
 do data science work here
 ```
 
-## &#x237e; Python
-##### &#x23f5; Necessity: [IDE](./Basic/ide.md) | [Packages](./Basic/python_package.md)
-##### &#x23f5; Lib: [pytorch](./Basic/torch/) 
+## &#x237e; ML 
+##### &#x23f5; traditional: [algorithms](./ml/algorithms/)
+##### &#x23f5; advanced: [models](./ml/models/)
+##### &#x23f5; math: [stats](./ml/stats/)
 <br />
 
 ## &#x237e; AI
-##### &#x23f5; Instance: [parts](./AI/ai-example/)
-##### &#x23f5; Theory: [example](./AI/ml/ml-example/)
-##### &#x23f5; ML/DL: [Models](./models/)
+##### &#x23f5; basic: [algorithm](./ai/basic_algorithm/)
 <br />
 
-# &#x232d; Mathematics
-```
-mathematics is important almost for everything
-```
+## &#x237e; Projects
+##### &#x23f5; CV/NLP
+##### &#x23f5; ....
+<br />
 
-## &#x237e; Math for ML
-##### &#x23f5; [notes](./Math/ML_Math/)
-
-## &#x237e; Latex
-##### &#x23f5; [guide](./Math/LaTex/LatexGuide.md) | [templates](./Math/LaTex/templates/)
+## &#x237e; Math
+##### &#x23f5; Basic: [Linear_Algebra](./math/Linear_Algebra/)
+##### &#x23f5; Latex: [guide](./Math/LaTex/LatexGuide.md) | [templates](./Math/LaTex/templates/)
 <br />
 
 

@@ -40,9 +40,17 @@ Temporary Items
 # dataset for ds
 dataset
 
+# ignore .csv and .txt 
+*.csv*
+*.txt*
+
+
 # directories 
-package 
-soundFonts
+local_assets
+archive
+input 
+output
+CLAP
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
