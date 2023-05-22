@@ -51,6 +51,9 @@ archive
 input 
 output
 CLAP
+drums-to-melody
+test_clap
+my_clap
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
